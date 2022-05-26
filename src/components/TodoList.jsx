@@ -4,7 +4,7 @@ const TodoList = ({todo, index, deleteTodo}) => {
         <th scope="row">{index}</th>
         <td>{todo.todo}</td>
         <td>{todo.completed ? 'Completado' : 'Incompleto'}</td>
-        <td> <button className="btn btn-danger" onClick={() => deleteTodo(todo.id)}>Eliminar</button> </td>
+        <th> <button className="btn btn-danger" onClick={() => deleteTodo(todo.id)}>Eliminar</button> </th>
     </>
   );
 };
